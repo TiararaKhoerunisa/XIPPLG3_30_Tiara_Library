@@ -78,13 +78,6 @@ class ReviewsController extends Controller
             ], 404);
         }
 
-        // $request->validate([
-        //     'book_id' => 'integer',
-        //     'user_id' => 'integer',
-        //     'rating' => 'integer|min:1|max:5',
-        //     'comment' => 'nullable|string',
-        // ]);
-
         $review->update($request->all());
 
         return response()->json([
