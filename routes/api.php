@@ -17,5 +17,4 @@ Route::apiResource('reviews', ReviewsController::class);
 
 Route::apiResource('users', User2Controller::class);
 
-
 Route::apiResource('books', BookController::class);
